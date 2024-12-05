@@ -20,7 +20,7 @@ class SingleBook extends Component {
 
       //se l'asin della carta selezionata è uguale a quello della props si selezionerà
       //ci sarà sempre solo una carta selezionata
-      <Card className={book.asin === this.props.asin ? "border-danger" : " "}>
+      <Card className={book.asin === this.props.asin ? "border-danger" : " "} data-testid="singleCard">
         <Card.Img
           variant="top"
           src={book.img}
