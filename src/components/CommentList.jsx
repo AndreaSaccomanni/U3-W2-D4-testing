@@ -72,7 +72,7 @@ class CommentList extends Component {
       <ListGroup>
         {this.state.comments.map((element) => {
           return (
-            <ListGroupItem key={element._id}>
+            <ListGroupItem key={element._id} data-testid="commment">
               <strong>Comment: </strong>
               {element.comment} - <strong>Rate: </strong>
               {element.rate}
